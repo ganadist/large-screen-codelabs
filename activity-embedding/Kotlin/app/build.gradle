@@ -64,5 +64,5 @@ dependencies {
 
     runtimeOnly 'androidx.browser:browser:1.6.0'
     runtimeOnly 'androidx.media:media:1.6.0'
-    runtimeOnly "com.google.ads.interactivemedia.v3:interactivemedia:3.31.0"
+    runtimeOnly "com.google.ads.interactivemedia.v3:interactivemedia:3.32.0"
 }
