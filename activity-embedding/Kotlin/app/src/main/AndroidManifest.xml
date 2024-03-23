@@ -22,6 +22,10 @@
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
+  <!--
+      Google IMA 3.32.0 added taskAffinity as ""(null) and all taskAffinity of Activities were messed up.
+      So, it need to clear taskAffinity
+  -->
   <application
       android:allowBackup="true"
       android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,6 +35,7 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/Theme.Activity_Embedding"
+      tools:remove="android:taskAffinity"
       tools:targetApi="32">
     <activity
         android:name=".ListActivity"
