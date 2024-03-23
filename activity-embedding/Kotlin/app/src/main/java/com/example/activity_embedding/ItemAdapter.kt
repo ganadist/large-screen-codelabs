@@ -68,7 +68,7 @@ class ItemAdapter(private val itemList: Array<String>) :
             val context = v.context
             val intent = if (position == itemCount - 1)
                 Intent(context, SummaryActivity::class.java)
-                else Intent(context, DetailActivity::class.java)
+                else Intent(context, DetailActivityStarter::class.java)
             intent.apply {
                 action = Intent.ACTION_VIEW
                 putExtra(Intent.EXTRA_TEXT,"${itemList[position]} detail")

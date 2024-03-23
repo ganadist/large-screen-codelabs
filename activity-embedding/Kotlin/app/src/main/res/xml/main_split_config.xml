@@ -12,6 +12,16 @@
           window:secondaryActivityName=".DetailActivity"/>
     </SplitPairRule>
 
+    <SplitPairRule
+        window:splitRatio="0.33"
+        window:splitMinWidthDp="840"
+        window:finishPrimaryWithSecondary="never"
+        window:finishSecondaryWithPrimary="always">
+        <SplitPairFilter
+            window:primaryActivityName=".ListActivity"
+            window:secondaryActivityName=".DetailActivityStarter"/>
+    </SplitPairRule>
+
     <!-- Automatically launch a placeholder for the detail activity. -->
     <SplitPlaceholderRule
         window:placeholderActivityName=".PlaceholderActivity"

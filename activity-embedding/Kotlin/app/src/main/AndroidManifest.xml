@@ -40,6 +40,10 @@
         android:name=".DetailActivity"
         android:exported="false"
         android:label="" />
+    <activity android:name=".DetailActivityStarter"
+        android:exported="false"
+        android:launchMode="singleTask"
+        android:label="" />
     <activity
         android:name=".SummaryActivity"
         android:exported="false"
