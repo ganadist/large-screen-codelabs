@@ -15,6 +15,18 @@
  */
 
 pluginManagement {
+    buildscript {
+        repositories {
+	    maven {
+	        url "https://storage.googleapis.com/r8-releases/raw"
+            }
+	}
+	logger.warn("Using R8 version $r8Version")
+        dependencies {
+            classpath("com.android.tools:r8:$r8Version")
+	}
+    }
+
     repositories {
         google()
         mavenCentral()
